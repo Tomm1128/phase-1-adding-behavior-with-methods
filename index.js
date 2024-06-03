@@ -1,13 +1,9 @@
-// Your code here
-
 class Cat {
   constructor(name, sex){
     this.name = name
     this.sex = sex
   }
-  speak = () => {
-    return `${this.name} says meow!`
-  }
+  speak = () => `${this.name} says meow!`
 }
 
 class Dog {
@@ -16,9 +12,7 @@ class Dog {
     this.sex = sex
   }
 
-  speak = () => {
-    return `${this.name} says woof!`
-  }
+  speak = () => `${this.name} says woof!`
 }
 
 class Bird {
@@ -27,12 +21,5 @@ class Bird {
     this.sex = sex
   }
 
-  speak = () => {
-    if(this.sex === "male"){
-      return `It's me! ${this.name}, the parrot!`
-    }
-    else {
-      return `${this.name} says squawk!`
-    }
-  }
+  speak = () => this.sex === "male" ? `It's me! ${this.name}, the parrot!` : `${this.name} says squawk!`
 }
